@@ -1,8 +1,17 @@
 import Head from "next/head";
 import React, { Component } from "react";
+import Image from "next/image";
 import { withRouter } from "next/router";
-import styles from "../../src/styles/Home.module.css";
-
+import styles from "/styles/Home.module.css";
+/* 
+  
+  =======================================
+  =======================================
+  <<<THIS FILE IS FOR LEARNING PURPOSE>>>
+  =======================================
+  =======================================
+  
+  */
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -16,13 +25,16 @@ class Home extends Component {
     // getHome("128", (status) => {});
   }
   render() {
+    // LOGIC
     const { active } = this.state;
     let pagination = [
+      // DUMMY DATA
       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-      22, 23, 24, 25, 26, 27, 28, 29, 30,
+      22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+      40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
     ];
     let paginationFirst = [1, 2, 3, 4, 5, 6];
-    let paginationSet = [4, 5, 6, 7, 8];
+    let paginationSet = [3, 4, 5, 6, 7];
     let paginationEnd = [];
     for (let i = pagination.length - 6; i < pagination.length + 1; i++) {
       paginationEnd.push(i);
