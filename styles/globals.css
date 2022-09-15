@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Image Full Fit*/
+.fullfit-image .ant-image {
+  width: 100%;
+  height: 100%;
+}
+
+.form-input {
+  background-color: white;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  border-color: lightgray;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  appearance: none;
+}
+
+.overflow-x-autoF {
+  overflow-x: auto;
+  margin-top: 3px;
+}
+
+/* width */
+.overflow-x-autoF::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+/* Track */
+.overflow-x-autoF::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.overflow-x-autoF::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+.overflow-x-autoF::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+/* Hidden arrow spinner Chrome, Safari, Edge, Opera */
+input[type="number"].hidden-arrow::-webkit-outer-spin-button,
+input[type="number"].hidden-arrow::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hidden arrow spinner Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* background: transparent; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* background: transparent; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* background: transparent; */
+}

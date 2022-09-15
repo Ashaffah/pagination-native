@@ -1,7 +1,5 @@
 import Head from "next/head";
 import React, { Component } from "react";
-import Image from "next/image";
-import { withRouter } from "next/router";
 import styles from "/styles/Home.module.css";
 /* 
   
@@ -20,10 +18,10 @@ class Home extends Component {
     active: 1,
   };
 
-  componentDidMount() {
-    const { getHome } = this.props;
-    // getHome("128", (status) => {});
-  }
+  // componentDidMount() {
+  //   const { getHome } = this.props;
+  //   // getHome("128", (status) => {});
+  // }
   render() {
     // LOGIC
     const { active } = this.state;
@@ -50,7 +48,7 @@ class Home extends Component {
     }
     if (active > 5) {
       let temp = [];
-      for (let i = active - 3; i < active + 2; i++) {
+      for (let i = active - 2; i < active + 3; i++) {
         temp.push(i);
       }
       paginationList = temp;
