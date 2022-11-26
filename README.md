@@ -1,6 +1,6 @@
 # pagination-native
 
-React.js [Pagination Native](https://pagination-native.vercel.app)
+Next.js, tailwind, and some [Pagination Native](https://pagination-native.vercel.app)
 
 ## getting started
 
