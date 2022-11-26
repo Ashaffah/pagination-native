@@ -7,5 +7,7 @@ React.js [Pagination Native](https://pagination-native.vercel.app)
 ```bash
 npm install
 #then run
-npx next dev
+npm run start
+#or
+npm run dev
 ```
