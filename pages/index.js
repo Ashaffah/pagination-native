@@ -170,7 +170,9 @@ class Home extends Component {
                         }`
                   } relative inline-flex items-center px-4 py-2 border text-sm font-medium`}
                   onClick={() => {
-                    this.setState({ active: val });
+                    if (val != "...") {
+                      this.setState({ active: val });
+                    }
                   }}
                 >
                   {" "}
