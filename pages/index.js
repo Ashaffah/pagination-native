@@ -47,6 +47,7 @@ class Home extends Component {
     for (let i = 1; i <= last_page; i++) {
       // Define offset
       let offset = i == 1 || last_page ? onSides + 1 : onSides;
+
       // If added
       if (
         i == 1 ||
@@ -123,7 +124,9 @@ class Home extends Component {
               <div
                 className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
                 onClick={() => {
-                  this.setState({ active: active - 1 });
+                  if (current_page > 1) {
+                    this.setState({ active: active - 1 });
+                  }
                 }}
               >
                 <span className="sr-only">Previous</span>
@@ -201,7 +204,8 @@ class Home extends Component {
               <div
                 className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
                 onClick={() => {
-                  this.setState({ active: active + 1 });
+                  if (current_page < pagination.length)
+                    this.setState({ active: active + 1 });
                 }}
               >
                 <span className="sr-only">Next</span>
